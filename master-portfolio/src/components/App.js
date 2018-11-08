@@ -12,6 +12,7 @@ import $ from 'jquery';
 
 import { 
     AppWrapper,
+    Nav
   } from './styled-components/App';
 
 
@@ -68,6 +69,7 @@ class App extends Component {
         <Header id={'header'} />
         <About id={'about'} />
         <Portfolio id={'portfolio'} />
+        {/* <Blog id={'blog'} /> */}
         <Contact id={'contact'} />
         <Footer />
         
