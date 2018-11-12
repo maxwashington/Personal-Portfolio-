@@ -1,149 +1,148 @@
 a:link {
-  color: white;  
+  color: white;
   text-decoration: none;
   font-weight: 900;
   cursor: pointer;
 }
 
 a:visited {
-  color: white;  
+  color: white;
 }
 
 a:hover {
- color: #CEE5F2;  
+  color: #cee5f2;
 }
 
 figure {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: 60%;
-    height: auto;
-    background: #D0CFCF;
-    text-align: center;
-    z-index: 900;    
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 60%;
+  height: auto;
+  background: #d0cfcf;
+  text-align: center;
+  z-index: 900;
 }
 
-@media (max-width: 879px ){
-    figure {
-        width: 100%;        
-    }
-}
-
- figure img {
-    position: relative;
-    display: block;
-    height: auto;
+@media (max-width: 879px) {
+  figure {
     width: 100%;
-    opacity: 0.8;
+  }
 }
 
- figure figcaption {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 5rem;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+figure img {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 100%;
+  opacity: 0.8;
 }
 
- figure figcaption::before,
- figure figcaption::after {
-    pointer-events: none;
+figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 5rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
- figure figcaption,
- figure figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
 }
 
-
- figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
+figure figcaption,
+figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
- figure h2 {
-    margin: 0;
+figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
 }
 
- figure h2 {
-    letter-spacing: 1px;
-    font-size: 68.5%;
+figure h2 {
+  margin: 0;
+}
+
+figure h2 {
+  letter-spacing: 1px;
+  font-size: 68.5%;
 }
 
 figure.effect-apollo {
-    background: #D0CFCF;
+  background: #d0cfcf;
 }
 
 figure.effect-apollo img {
-    opacity: 0.95;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale3d(1.05,1.05,1);
-    transform: scale3d(1.05,1.05,1);
+  opacity: 0.95;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05, 1.05, 1);
+  transform: scale3d(1.05, 1.05, 1);
 }
 
 figure.effect-apollo figcaption::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.5);
-    content: '';
-    -webkit-transition: -webkit-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, -100%, 0);
 }
 
 figure.effect-apollo h2 {
-    position: relative;
-    text-align: center;
-    padding: 0 1em;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
+  position: relative;
+  text-align: center;
+  padding: 0 1em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 
-
 figure.effect-apollo:hover img {
-    opacity: 0.6;
-    -webkit-transform: scale3d(1,1,1);
-    transform: scale3d(1,1,1);
+  opacity: 0.6;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
 }
 
 figure.effect-apollo:hover figcaption::before {
-    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
-    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, 100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
+    translate3d(0, 100%, 0);
 }
 
 figure.effect-apollo:hover h2 {
-    opacity: 1;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 /* background animation */
 
 .hero-bkg-animated {
-    background: gray;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    
-  }
-
-  
+  background: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}

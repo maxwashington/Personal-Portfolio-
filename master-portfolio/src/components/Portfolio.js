@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
-
 import { Section, TopDiv, BotDiv, Title } from './styled-components/Portfolio';
 import './animation-css/Portfolio.css';
 
