@@ -33,7 +33,7 @@ class Portfolio extends Component {
               <img
                 src={
                   'https://media.giphy.com/media/9Jczt2FmAyFW8FZF7k/giphy.gif'
-                }
+                } alt="KSL gif animation"
               />
 
               <figcaption>

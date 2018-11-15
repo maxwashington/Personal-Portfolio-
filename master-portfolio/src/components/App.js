@@ -10,7 +10,7 @@ import './animation-css/App.css';
 
 import $ from 'jquery';
 
-import { AppWrapper, Nav } from './styled-components/App';
+import { AppWrapper } from './styled-components/App';
 
 class App extends Component {
   componentDidMount() {
