@@ -8,6 +8,7 @@
     "animejs": "^2.2.0",
     "axios": "^0.18.0",
     "chart.js": "^2.7.3",
+    "gatsby": "^2.0.50",
     "jquery": "^3.3.1",
     "netlify-cli": "^2.2.1",
     "react": "^16.6.1",
@@ -28,5 +29,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
